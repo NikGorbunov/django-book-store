@@ -1,0 +1,23 @@
+{% extends 'books/base.html'%}
+{% load i18n %}
+{% block content %}
+    <div>
+        <h3 align="center">{% trans "Last ten requests in app" %}</h3>
+    </div>
+    <div>
+        <table id="saved_requests">
+          <tr>
+            <th style="text-align:center">Request method</th>
+            <th style="text-align:center">Request path</th>
+            <th style="text-align:center">Request time</th>
+          </tr>
+          {% for request in requests %}
+          <tr>
+            <td>{{ request.request_method }}</td>
+            <td>{{ request.request_path }}</td>
+            <td>{{ request.request_datetime }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+    </div>
+{% endblock content %}

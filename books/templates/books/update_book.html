@@ -1,0 +1,38 @@
+{% extends 'books/base.html'%}
+{% load i18n %}
+{% block content %}
+<legend>{% trans "Edit book" %}</legend>
+<form method="POST">
+    {% csrf_token %}
+    <table class="form-group" id="add-books">
+        <tr>
+            <th style="text-align:center">{{ form.book_store.label }}</th>
+            <th style="text-align:center">{{ form.book_title.label }}</th>
+            <th style="text-align:center">{{ form.author_info.label }}</th>
+            <th style="text-align:center">{{ form.genre.label }}</th>
+            <th style="text-align:center">{{ form.isbn.label }}</th>
+            <th style="text-align:center">{{ form.price.label }}</th>
+        </tr>
+        <tr>
+            <td>{{ form.book_store }}</td>
+            <td>{{ form.book_title }}</td>
+            <td>{{ form.author_info }}</td>
+            <td>{{ form.genre }}</td>
+            <td>{{ form.isbn }}</td>
+            <td>{{ form.price }} $</td>
+        </tr>
+        <tr>
+            <th colspan="2" style="text-align:left">
+                {{ form.date_publish.label }}
+            </th>
+            <td colspan="2" align="left">
+                {{ form.date_publish }}
+            </td>
+        </tr>
+    </table>
+
+    <div class="form-group">
+        <button class="btn btn-outline-primary" type="submit">{% trans "Edit book" %}</button>
+    </div>
+</form>
+{% endblock content %}

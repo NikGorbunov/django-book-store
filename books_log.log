@@ -1,0 +1,103 @@
+[2023-08-28 13:17:50,901 - django.request - ERROR] - Internal Server Error: /add_book/
+Traceback (most recent call last):
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 141, in post
+    if form.is_valid():
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/forms/forms.py", line 175, in is_valid
+    return self.is_bound and not self.errors
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/forms/forms.py", line 170, in errors
+    self.full_clean()
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/forms/forms.py", line 374, in full_clean
+    self._post_clean()
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/forms/models.py", line 413, in _post_clean
+    self.instance.full_clean(exclude=exclude, validate_unique=False)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/db/models/base.py", line 1236, in full_clean
+    self.clean()
+  File "/Users/nik.gorbunov/Projects/Django-book-store/books/models.py", line 47, in clean
+    current_time = datetime.now().time()
+NameError: name 'datetime' is not defined
+[2023-08-28 13:19:46,792 - django.utils.autoreload - INFO] - /Users/nik.gorbunov/Projects/Django-book-store/books/models.py changed, reloading.
+[2023-08-28 13:19:50,453 - django.request - ERROR] - Internal Server Error: /add_book/
+Traceback (most recent call last):
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 141, in post
+    if form.is_valid():
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/forms/forms.py", line 175, in is_valid
+    return self.is_bound and not self.errors
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/forms/forms.py", line 170, in errors
+    self.full_clean()
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/forms/forms.py", line 374, in full_clean
+    self._post_clean()
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/forms/models.py", line 413, in _post_clean
+    self.instance.full_clean(exclude=exclude, validate_unique=False)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/db/models/base.py", line 1236, in full_clean
+    self.clean()
+  File "/Users/nik.gorbunov/Projects/Django-book-store/books/models.py", line 47, in clean
+    current_time = date.now().time()
+AttributeError: type object 'datetime.date' has no attribute 'now'
+[2023-08-28 13:20:36,572 - django.utils.autoreload - INFO] - /Users/nik.gorbunov/Projects/Django-book-store/books/models.py changed, reloading.
+[2023-08-28 13:20:48,541 - django.utils.autoreload - INFO] - /Users/nik.gorbunov/Projects/Django-book-store/books/models.py changed, reloading.
+[2023-08-28 13:20:53,648 - django.request - ERROR] - Internal Server Error: /add_book/
+Traceback (most recent call last):
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 144, in post
+    return self.form_invalid(form)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 61, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 67, in get_context_data
+    return super().get_context_data(**kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/detail.py", line 100, in get_context_data
+    return super().get_context_data(**context)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/list.py", line 115, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+AttributeError: 'BookCreateView' object has no attribute 'object_list'
+[2023-08-28 13:22:55,411 - django.request - ERROR] - Internal Server Error: /add_book/
+Traceback (most recent call last):
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 144, in post
+    return self.form_invalid(form)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 61, in form_invalid
+    return self.render_to_response(self.get_context_data(form=form))
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/edit.py", line 67, in get_context_data
+    return super().get_context_data(**kwargs)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/detail.py", line 100, in get_context_data
+    return super().get_context_data(**context)
+  File "/Users/nik.gorbunov/.pyenv/versions/3.7.12/lib/python3.7/site-packages/django/views/generic/list.py", line 115, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+AttributeError: 'BookCreateView' object has no attribute 'object_list'

@@ -1,0 +1,35 @@
+[
+  {
+    "model": "books.Book",
+    "pk": 1,
+    "fields": {
+      "book store": "Books Shop",
+      "book_title": "Lord of the rings",
+      "authors_info": "J.R.Tolkien",
+      "isbn": 1,
+      "price": 40
+    }
+  },
+  {
+    "model": "books.Book",
+    "pk": 2,
+    "fields": {
+      "book store": "Books Shop 2",
+      "book_title": "Wolfhound",
+      "authors_info": "M.Semenova",
+      "isbn": 2,
+      "price": 40
+    }
+  },
+  {
+    "model": "books.Book",
+    "pk": 3,
+    "fields": {
+      "book store": "Books Shop 3",
+      "book_title": "Way back home",
+      "authors_info": "V.Zukov",
+      "isbn": 3,
+      "price": 40
+    }
+  }
+]
